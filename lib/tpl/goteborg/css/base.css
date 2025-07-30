@@ -11,7 +11,7 @@
   /* Göteborgs Stads primära färgpalett */
   --goteborg-blue: #0077BC;           /* Göteborgsblå (primär) */
   --goteborg-dark-blue: #0077BC;      /* Mörkblå */
-  --goteborg-light-blue: #0077BC;     /* Ljusblå */
+  --goteborg-light-blue: #479EF5;     /* Ljusblå */
   --goteborg-green: #00753b;          /* Grön */
   --goteborg-purple: #712082;         /* Lila */
   --goteborg-red: #c31c55;            /* Röd */
@@ -112,8 +112,8 @@
   --dokuwiki-background: #1a1a1a;
   --dokuwiki-text: #ffffff;
   --dokuwiki-border: #404040;
-  --dokuwiki-link: #009eb4;
-  --dokuwiki-link-visited: #006298;
+  --dokuwiki-link: #479EF5;
+  --dokuwiki-link-visited: #479EF5;
   --dokuwiki-background-site: #1a1a1a;
   --dokuwiki-highlight: #009eb4;
   
@@ -283,4 +283,8 @@ a:hover, a:focus {
 [data-bs-theme="dark"] .btn-primary:hover {
   background-color: var(--goteborg-blue);
   border-color: var(--goteborg-blue);
+}
+
+textarea#wiki__text.edit {
+    width: 100%;
 }

@@ -7,5 +7,3 @@
 if (!defined('DOKU_INC')) die();
 ?>
 <!-- Anpassningsbar footer, tomt som standard men kan modifieras -->
-
-Ylle was here!
