@@ -15,8 +15,8 @@
 /* Basic Settings */
 $conf['title']       = 'DokuWiki';        //what to show in the title
 $conf['start']       = 'start';           //name of start page
-$conf['lang']        = 'en';              //your language
-$conf['template']    = 'dokuwiki';         //see lib/tpl directory
+$conf['lang']        = 'sv';              //your language
+$conf['template']    = 'goteborg';         //see lib/tpl directory
 $conf['tagline']     = '';                //tagline in header (if template supports it)
 $conf['sidebar']     = 'sidebar';         //name of sidebar in root namespace (if template supports it)
 $conf['license']     = 'cc-by-nc-sa';     //see conf/license.php
@@ -35,7 +35,7 @@ $conf['breadcrumbs'] = 10;                //how many recent visited pages to sho
 $conf['youarehere']  = 0;                 //show "You are here" navigation? 0|1
 $conf['fullpath']    = 0;                 //show full path of the document or relative to datadir only? 0|1
 $conf['typography']  = 1;                 //smartquote conversion 0=off, 1=doublequotes, 2=all quotes
-$conf['dformat']     = '%Y/%m/%d %H:%M';  //dateformat accepted by PHPs strftime() function
+$conf['dformat']     = '%Y-%m-%d %H:%M';  //dateformat accepted by PHPs strftime() function
 $conf['signature']   = ' --- //[[@MAIL@|@NAME@]] @DATE@//'; //signature see wiki page for details
 $conf['showuseras']  = 'loginname';       // 'loginname' users login name
                                           // 'username' users full name
