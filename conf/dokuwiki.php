@@ -13,13 +13,13 @@
 
 
 /* Basic Settings */
-$conf['title']       = 'DokuWiki';        //what to show in the title
+$conf['title']       = 'DokuWiki (goteborg)';        //what to show in the title
 $conf['start']       = 'start';           //name of start page
 $conf['lang']        = 'sv';              //your language
 $conf['template']    = 'goteborg';         //see lib/tpl directory
 $conf['tagline']     = '';                //tagline in header (if template supports it)
 $conf['sidebar']     = 'sidebar';         //name of sidebar in root namespace (if template supports it)
-$conf['license']     = 'cc-by-nc-sa';     //see conf/license.php
+$conf['license']     = '0';     //see conf/license.php
 $conf['savedir']     = './data';          //where to store all the files
 $conf['basedir']     = '';                //absolute dir from serveroot - blank for autodetection
 $conf['baseurl']     = '';                //URL to server including protocol - blank for autodetect
@@ -28,16 +28,17 @@ $conf['dmode']       = 0755;              //set directory creation mode
 $conf['fmode']       = 0644;              //set file creation mode
 $conf['allowdebug']  = 0;                 //allow debug output, enable if needed 0|1
 
+
 /* Display Settings */
 $conf['recent']      = 20;                //how many entries to show in recent
 $conf['recent_days'] = 7;                 //How many days of recent changes to keep. (days)
-$conf['breadcrumbs'] = 10;                //how many recent visited pages to show
-$conf['youarehere']  = 0;                 //show "You are here" navigation? 0|1
+$conf['breadcrumbs'] = 0;                //how many recent visited pages to show
+$conf['youarehere']  = 1;                 //show "You are here" navigation? 0|1
 $conf['fullpath']    = 0;                 //show full path of the document or relative to datadir only? 0|1
 $conf['typography']  = 1;                 //smartquote conversion 0=off, 1=doublequotes, 2=all quotes
 $conf['dformat']     = '%Y-%m-%d %H:%M';  //dateformat accepted by PHPs strftime() function
 $conf['signature']   = ' --- //[[@MAIL@|@NAME@]] @DATE@//'; //signature see wiki page for details
-$conf['showuseras']  = 'loginname';       // 'loginname' users login name
+$conf['showuseras']  = 'username';       // 'loginname' users login name
                                           // 'username' users full name
                                           // 'email' e-mail address (will be obfuscated as per mailguard)
                                           // 'email_link' e-mail address as a mailto: link (obfuscated)
@@ -47,7 +48,7 @@ $conf['maxtoclevel'] = 3;                 //Up to which level include into AutoT
 $conf['maxseclevel'] = 3;                 //Up to which level create editable sections (max. 5)
 $conf['camelcase']   = 0;                 //Use CamelCase for linking? (I don't like it) 0|1
 $conf['deaccent']    = 1;                 //deaccented chars in pagenames (1) or romanize (2) or keep (0)?
-$conf['useheading']  = 0;                 //use the first heading in a page as its name
+$conf['useheading']  = 1;                 //use the first heading in a page as its name
 $conf['sneaky_index']= 0;                 //check for namespace read permission in index view (0|1) (1 might cause unexpected behavior)
 $conf['hidepages']   = '';                //Regexp for pages to be skipped from RSS, Search and Recent Changes
 
