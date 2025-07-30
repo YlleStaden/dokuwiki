@@ -1,0 +1,321 @@
+/**
+ * DokuWiki Template goteborg - Content
+ *
+ * Stilar för sidinnehåll
+ */
+
+/* Allmänna innehållsstilar */
+.page-content {
+  line-height: 1.6;
+}
+
+/* Rubriker */
+.page-content h1, 
+.page-content h2, 
+.page-content h3, 
+.page-content h4, 
+.page-content h5 {
+  margin: 1.5em 0 0.6em 0;
+  font-weight: 600;
+  color: var(--bs-body-color);
+}
+
+.page-content h1 {
+  font-size: 2em;
+  border-bottom: 1px solid var(--bs-border-color);
+  padding-bottom: 0.3em;
+}
+
+.page-content h2 {
+  font-size: 1.75em;
+}
+
+.page-content h3 {
+  font-size: 1.5em;
+}
+
+.page-content h4 {
+  font-size: 1.25em;
+}
+
+.page-content h5 {
+  font-size: 1.1em;
+}
+
+/* Länkar inom innehållet */
+.page-content a {
+  color: var(--dokuwiki-link);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--dokuwiki-link);
+}
+
+.page-content a:hover,
+.page-content a:focus {
+  color: var(--dokuwiki-link-visited);
+  border-bottom: 1px solid var(--dokuwiki-link-visited);
+  text-decoration: none;
+}
+
+.page-content a.wikilink2 {
+  color: #d00;
+  border-bottom: 1px dotted #d00;
+}
+
+/* Tabeller */
+.page-content table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.page-content th {
+  background-color: var(--bs-light);
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid var(--bs-border-color);
+  text-align: left;
+}
+
+.page-content td {
+  padding: 8px;
+  border: 1px solid var(--bs-border-color);
+}
+
+.page-content tr:nth-child(even) {
+  background-color: var(--bs-body-tertiary);
+}
+
+[data-bs-theme="dark"] .page-content th {
+  background-color: #2c2c2c;
+}
+
+[data-bs-theme="dark"] .page-content tr:nth-child(even) {
+  background-color: #333;
+}
+
+/* Listor */
+.page-content ul,
+.page-content ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.page-content ul li {
+  list-style-type: disc;
+  margin-bottom: 0.5em;
+}
+
+.page-content ol li {
+  list-style-type: decimal;
+  margin-bottom: 0.5em;
+}
+
+/* Preformaterad text och kodblock */
+.page-content pre {
+  font-family: var(--bs-font-monospace);
+  background-color: var(--bs-light);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+  overflow: auto;
+}
+
+[data-bs-theme="dark"] .page-content pre {
+  background-color: #2c2c2c;
+  border-color: #494949;
+}
+
+.page-content code {
+  font-family: var(--bs-font-monospace);
+  background-color: var(--bs-light);
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+[data-bs-theme="dark"] .page-content code {
+  background-color: #2c2c2c;
+}
+
+/* Citat (blockquote) */
+.page-content blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid var(--bs-primary);
+  background-color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .page-content blockquote {
+  background-color: #2c2c2c;
+  border-left: 4px solid #3378b4;
+}
+
+/* Bilder */
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Filuppladdning */
+.page-content div.upload {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+  background-color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .page-content div.upload {
+  background-color: #2c2c2c;
+  border-color: #494949;
+}
+
+/* Formulär */
+.page-content form input,
+.page-content form select,
+.page-content form textarea {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+  padding: 6px 10px;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.page-content form input:focus,
+.page-content form select:focus,
+.page-content form textarea:focus {
+  border-color: var(--bs-primary);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.page-content form textarea {
+  min-height: 400px;
+  width: 100%;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--bs-text-meta);
+}
+
+.breadcrumbs span {
+  margin-right: 5px;
+}
+
+.breadcrumbs a {
+  color: var(--bs-text-meta);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--dokuwiki-link);
+  text-decoration: underline;
+}
+
+/* Sidfotsinformation */
+.docInfo {
+  font-size: 0.8em;
+  color: var(--bs-text-meta);
+  margin-top: 2em;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+/* TOC (Table of Contents) */
+#dw__toc {
+  float: right;
+  width: 300px;
+  margin: 0 0 1em 1em;
+  padding: 1em;
+  background-color: var(--bs-light);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+}
+
+[data-bs-theme="dark"] #dw__toc {
+  background-color: #2c2c2c;
+  border-color: #494949;
+}
+
+#dw__toc h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+#dw__toc ul {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+
+#dw__toc ul li {
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 767.98px) {
+  #dw__toc {
+    float: none;
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+/* Meddelandeområde */
+div.info, div.success, div.warning, div.error {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+
+div.info {
+  background-color: var(--bs-info-bg-subtle);
+  color: var(--bs-info-text-emphasis);
+  border: 1px solid var(--bs-info-border-subtle);
+}
+
+div.success {
+  background-color: var(--bs-success-bg-subtle);
+  color: var(--bs-success-text-emphasis);
+  border: 1px solid var(--bs-success-border-subtle);
+}
+
+div.warning {
+  background-color: var(--bs-warning-bg-subtle);
+  color: var(--bs-warning-text-emphasis);
+  border: 1px solid var(--bs-warning-border-subtle);
+}
+
+div.error {
+  background-color: var(--bs-danger-bg-subtle);
+  color: var(--bs-danger-text-emphasis);
+  border: 1px solid var(--bs-danger-border-subtle);
+}
+
+/* Revisioner och diff */
+.diff-lineheader {
+  width: 1em;
+}
+
+.diff-addedline {
+  background-color: #dfd;
+}
+
+.diff-deletedline {
+  background-color: #fdd;
+}
+
+[data-bs-theme="dark"] .diff-addedline {
+  background-color: #253025;
+}
+
+[data-bs-theme="dark"] .diff-deletedline {
+  background-color: #352525;
+}
+

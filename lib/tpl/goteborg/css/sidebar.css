@@ -1,0 +1,188 @@
+/**
+ * DokuWiki Template goteborg - Sidebar CSS
+ *
+ * Specifika stilar för sidebaren som matchar Göteborgs Stads webbplats
+ */
+
+/* Göteborgs Stad-stil på sidomenyn */
+.sidebar-navigation {
+  background-color: #f5f5f5;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.sidebar-navigation .sidebar-header {
+  background-color: #efefef;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.sidebar-navigation .sidebar-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar-content {
+  padding: 0;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-content li {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar-content li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #006298;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sidebar-content a:hover,
+.sidebar-content a:focus {
+  background-color: #f0f8ff;
+  color: #004f7a;
+  text-decoration: none;
+}
+
+.sidebar-content a.active,
+.sidebar-content a.current {
+  background-color: #f0f8ff;
+  font-weight: 600;
+  color: #004f7a;
+  border-left: 3px solid #006298;
+  padding-left: calc(1rem - 3px);
+}
+
+/* Sidebar content styling for DokuWiki syntax */
+.sidebar-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content p a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #006298;
+  text-decoration: none;
+}
+
+.sidebar-content p strong,
+.sidebar-content p b {
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: #efefef;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar-content p a:hover,
+.sidebar-content p a:focus {
+  background-color: #f0f8ff;
+  color: #004f7a;
+}
+
+/* Sidebar submenu styling */
+.sidebar-content ul ul {
+  border-top: 1px solid #e5e5e5;
+  background-color: #fafafa;
+}
+
+.sidebar-content ul ul li {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sidebar-content ul ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-content ul ul a {
+  padding-left: 2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.sidebar-content ul ul a:hover,
+.sidebar-content ul ul a:focus {
+  background-color: #f0f8ff;
+}
+
+/* Hierarchical navigation structure */
+.sidebar-content p + p {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Special styling for dokuwiki links */
+.sidebar-content a.wikilink1 {
+  color: #006298;
+}
+
+.sidebar-content a.wikilink2 {
+  color: #c31c55;
+}
+
+/* Dark mode adaptations */
+[data-bs-theme="dark"] .sidebar-navigation {
+  background-color: #2a2a2a;
+}
+
+[data-bs-theme="dark"] .sidebar-navigation .sidebar-header {
+  background-color: #333333;
+}
+
+[data-bs-theme="dark"] .sidebar-navigation .sidebar-header h3 {
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .sidebar-content p strong,
+[data-bs-theme="dark"] .sidebar-content p b {
+  background-color: #333333;
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .sidebar-content li,
+[data-bs-theme="dark"] .sidebar-content p + p,
+[data-bs-theme="dark"] .sidebar-content ul ul {
+  border-color: #444;
+}
+
+[data-bs-theme="dark"] .sidebar-content ul ul {
+  background-color: #222;
+}
+
+[data-bs-theme="dark"] .sidebar-content a {
+  color: #4d8cbf;
+}
+
+[data-bs-theme="dark"] .sidebar-content a:hover,
+[data-bs-theme="dark"] .sidebar-content a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .sidebar-content a.active,
+[data-bs-theme="dark"] .sidebar-content a.current {
+  background-color: #333;
+  border-left-color: #4d8cbf;
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .sidebar-content a.wikilink1 {
+  color: #4d8cbf;
+}
+
+[data-bs-theme="dark"] .sidebar-content a.wikilink2 {
+  color: #d34f7c;
+}

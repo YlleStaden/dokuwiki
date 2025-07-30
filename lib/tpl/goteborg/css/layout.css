@@ -1,0 +1,1096 @@
+/**
+ * DokuWiki Template goteborg - Layout CSS
+ *
+ * Stilar för layout och struktur enligt Göteborgs Stads designsystem
+ */
+
+/* Header och navigering */
+#dokuwiki__header {
+  background-color: var(--dokuwiki-background);
+  border-bottom: 1px solid var(--dokuwiki-border);
+  padding: var(--spacing-md) 0;
+}
+
+/* Logo styling */
+.site-logo {
+  height: 40px;
+  margin-right: var(--spacing-md);
+  width: auto;
+}
+
+/* Footer logo */
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navbar branding */
+.navbar-brand {
+  color: var(--goteborg-blue);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+  color: var(--goteborg-blue);
+}
+
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .navbar-brand span {
+  color: var(--dokuwiki-text);
+}
+
+/* Huvudmeny enligt Göteborgs Stads webbplats */
+.navbar-dark {
+  background-color: var(--goteborg-blue) !important;
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.current {
+  background-color: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: var(--spacing-sm);
+  margin-right: var(--spacing-md);
+}
+
+/* Brödsmulor */
+.breadcrumbs {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  background: none;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.breadcrumbs a {
+  color: #712082;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a:hover {
+  color: #006298;
+  text-decoration: none;
+}
+
+/* You are here specific styling */
+.breadcrumbs .curid {
+  font-weight: 600;
+  color: #333;
+}
+
+.breadcrumbs .sep {
+  color: #999;
+  margin: 0 0.25rem;
+}
+
+/* Dark mode for breadcrumbs/you are here */
+[data-bs-theme="dark"] .breadcrumbs {
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .breadcrumbs a {
+  color: #bfaaff;
+}
+
+[data-bs-theme="dark"] .breadcrumbs a:hover {
+  color: #81ccd5;
+}
+
+[data-bs-theme="dark"] .breadcrumbs .curid {
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .breadcrumbs .sep {
+  color: #666;
+}
+
+.home-icon {
+  color: var(--goteborg-blue);
+  font-size: 1rem;
+}
+
+/* Innehållsområde */
+.content-wrapper {
+  background-color: var(--dokuwiki-background);
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  margin-top: var(--spacing-lg);
+}
+
+/* Rulliknande navigering */
+.dokuwiki__content {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Footer */
+#dokuwiki__footer {
+  background-color: var(--bs-dark);
+  padding-top: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xxl);
+  margin-top: var(--spacing-xxl);
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  border-radius: 0;
+}
+
+#dokuwiki__footer h4 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 600;
+}
+
+#dokuwiki__footer .footer-logo {
+  margin-bottom: var(--spacing-lg);
+  height: 50px;
+}
+
+#dokuwiki__footer p {
+  margin-bottom: var(--spacing-sm);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#dokuwiki__footer .border-top {
+  border-top-color: rgba(255, 255, 255, 0.2) !important;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+}
+
+#dokuwiki__footer ul.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: var(--spacing-lg);
+}
+
+#dokuwiki__footer ul.list-unstyled li {
+  margin-bottom: var(--spacing-sm);
+}
+
+#dokuwiki__footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+#dokuwiki__footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* Formatering för huvudinnehållet */
+#dokuwiki__main p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+/* Rubrikstil */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--bs-dark);
+  margin-bottom: var(--spacing-lg);
+  border-bottom: none;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--bs-dark);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--bs-dark);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+/* Dark mode anpassningar */
+[data-bs-theme="dark"] .navbar-dark {
+  background-color: var(--goteborg-dark-blue) !important;
+}
+
+[data-bs-theme="dark"] .breadcrumbs {
+  color: var(--text_alt__);
+}
+
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3 {
+  color: var(--dokuwiki-text);
+}
+
+[data-bs-theme="dark"] .content-wrapper {
+  background-color: var(--dokuwiki-background);
+}
+
+[data-bs-theme="dark"] #dokuwiki__header {  
+  border-bottom: 1px solid #333;
+}
+
+[data-bs-theme="dark"] .goteborg-header-title {
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .goteborg-header-inner {
+  background: transparent;
+}
+
+/* Responsiv layout */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-nav .nav-link {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  #dokuwiki__footer {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+  }
+  .goteborg-main-flex {
+    flex-direction: column-reverse;
+    padding: 0 0.5rem;
+  }
+  .goteborg-sidebar {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .goteborg-content {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .goteborg-main-flex {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .goteborg-sidebar {
+    min-width: 0;
+    padding: 0 0.5rem;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .goteborg-content {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  #dokuwiki__footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Centered header styles */
+.goteborg-header-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.goteborg-header-inner {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.goteborg-header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.site-logo {
+  height: 56px;
+  width: auto;
+  margin-right: 1.5rem;
+  margin-left: 0;
+}
+
+/* Breadcrumbs background full width and centered text */
+.goteborg-breadcrumbs-bg {
+  background: #f7f7f7;
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  min-height: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 0;
+  z-index: 2;
+}
+.goteborg-breadcrumbs-bg .container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Blue menu as pill buttons */
+.navbar-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-nav .nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 1.15rem;
+  padding: 0 2rem;
+  border-radius: 0.75rem;
+  margin: 0 0.1rem;
+  color: #fff;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: none;
+  text-align: center;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background: #005485;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.current {
+  background: #2196d2;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Navbar tools (search + toggle) */
+.navbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+  height: 48px;
+  padding-right: 16px;
+}
+
+/* Search form in navbar */
+.navbar-tools form.search {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 0.25rem;
+  height: 40px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-tools input[type="text"],
+.navbar-tools input.edit {
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  min-width: 180px;
+  height: 32px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.navbar-tools input[type="text"]::placeholder,
+.navbar-tools input.edit::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.navbar-tools input[type="text"]:focus,
+.navbar-tools input.edit:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+  min-width: 280px;
+}
+
+.navbar-tools input[type="text"]:focus::placeholder,
+.navbar-tools input.edit:focus::placeholder {
+  opacity: 0.5;
+  transform: translateX(10px);
+}
+
+.navbar-tools button.button,
+.navbar-tools input[type="submit"] {
+  position: absolute;
+  right: 0;
+  border-radius: 1.5rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 32px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.navbar-tools button.button:hover,
+.navbar-tools input[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
+
+/* Dark mode adjustments for search */
+[data-bs-theme="dark"] .navbar-tools input[type="text"],
+[data-bs-theme="dark"] .navbar-tools input.edit {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .navbar-tools input[type="text"]:focus,
+[data-bs-theme="dark"] .navbar-tools input.edit:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modern dark/light toggle */
+.navbar-tools .form-check.form-switch {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1rem;
+  gap: 0.5rem;
+  height: 40px;
+}
+.navbar-tools .form-check-input {
+  width: 2.2em;
+  height: 1.1em;
+  border-radius: 1.1em;
+  background: #e0e0e0;
+  border: 1px solid #ccc;
+  transition: background 0.2s, border 0.2s;
+}
+.navbar-tools .form-check-input:checked {
+  background: #006298;
+  border-color: #006298;
+}
+.navbar-tools .form-check-label {
+  font-size: 0.95rem;
+  margin-left: 0.25rem;
+  user-select: none;
+}
+
+/* Center and align navbar content */
+.navbar {
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  background: #0076b6;
+  min-height: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  border-radius: 0;
+}
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Breadcrumbs alignment */
+.goteborg-breadcrumbs-bg .container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Footer full width */
+#dokuwiki__footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar tool icon buttons modern style */
+.btn-navbar-search,
+.btn-navbar-theme,
+.btn-navbar-menu {
+  width: 44px;
+  height: 44px;
+  background: #0076b6;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0 0.15rem;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.btn-navbar-search:focus,
+.btn-navbar-search:hover,
+.btn-navbar-theme:focus,
+.btn-navbar-theme:hover,
+.btn-navbar-menu:focus,
+.btn-navbar-menu:hover {
+  background: #005485;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.btn-navbar-search .bi,
+.btn-navbar-theme .bi,
+.btn-navbar-menu .bi {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+/* Dark mode for navbar buttons */
+[data-bs-theme="dark"] .btn-navbar-search,
+[data-bs-theme="dark"] .btn-navbar-theme,
+[data-bs-theme="dark"] .btn-navbar-menu {
+  background: #23272b;
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .btn-navbar-search:hover,
+[data-bs-theme="dark"] .btn-navbar-search:focus,
+[data-bs-theme="dark"] .btn-navbar-theme:hover,
+[data-bs-theme="dark"] .btn-navbar-theme:focus,
+[data-bs-theme="dark"] .btn-navbar-menu:hover,
+[data-bs-theme="dark"] .btn-navbar-menu:focus {
+  background: #005485;
+  color: #fff;
+}
+
+/* Modern dropdown menu */
+.dropdown-menu {
+  display: none;
+}
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+.dropdown-menu .dropdown-item {
+  border-radius: 0.4rem;
+  padding: 0.5rem 1.2rem 0.5rem 2.2rem;
+  color: #333;
+  transition: background 0.15s, color 0.15s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dropdown-menu .dropdown-item .bi {
+  position: absolute;
+  left: 0.8rem;
+  font-size: 1.1rem;
+  color: #0076b6;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background: #f0f8ff;
+  color: #006298;
+}
+.dropdown-menu li {
+  list-style: none;
+}
+
+/* Dark mode for dropdowns */
+[data-bs-theme="dark"] .dropdown-menu {
+  background: #23272b;
+  border: none;
+  color: #e0e0e0;
+}
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item {
+  color: #e0e0e0;
+}
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item .bi {
+  color: #bfaaff;
+}
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item:hover,
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item:focus {
+  background: #333;
+  color: #81ccd5;
+}
+
+/* Set max-width for search dropdown */
+#searchDropdown + .dropdown-menu {
+  min-width: 220px;
+  max-width: 340px;
+}
+#searchDropdown + .dropdown-menu form {
+  width: 100%;
+}
+
+/* Add a small arrow/caret above dropdowns */
+.dropdown-menu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 1.5rem;
+  width: 18px;
+  height: 10px;
+  background: transparent;
+}
+.dropdown-menu::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 1.7rem;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 1;
+}
+[data-bs-theme="dark"] .dropdown-menu::after {
+  background: #23272b;
+}
+
+/* Custom dropdown styles */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  min-width: 220px;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  padding: 1rem 1rem 0.5rem 1rem;
+  z-index: 1000;
+  transition: opacity 0.15s;
+}
+.custom-dropdown.open .custom-dropdown-menu {
+  display: block;
+}
+.custom-dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1.2rem 0.5rem 2.2rem;
+  position: relative;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+.custom-dropdown-menu .dropdown-item .bi {
+  position: absolute;
+  left: 0.8rem;
+  font-size: 1.1rem;
+  color: #0076b6;
+}
+.custom-dropdown-menu .dropdown-item:hover,
+.custom-dropdown-menu .dropdown-item:focus {
+  background: #f0f8ff;
+  color: #006298;
+}
+
+[data-bs-theme="dark"] .custom-dropdown-menu {
+  background: #23272b;
+  color: #e0e0e0;
+}
+[data-bs-theme="dark"] .custom-dropdown-menu .dropdown-item {
+  color: #e0e0e0;
+}
+[data-bs-theme="dark"] .custom-dropdown-menu .dropdown-item .bi {
+  color: #bfaaff;
+}
+[data-bs-theme="dark"] .custom-dropdown-menu .dropdown-item:hover,
+[data-bs-theme="dark"] .custom-dropdown-menu .dropdown-item:focus {
+  background: #333;
+  color: #81ccd5;
+}
+
+[data-bs-theme="dark"] .goteborg-breadcrumbs-bg {
+  background: #23272b;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Light mode (default) */
+.form-check-label {
+  color: #23272b;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .form-check-label {
+  color: #fff;
+}
+
+html, body, #dokuwiki__site {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar,
+.goteborg-breadcrumbs-bg,
+#dokuwiki__footer {
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  border-radius: 0;
+}
+
+/* Search dropdown menu enhancements */
+#searchDropdownMenu {
+  transform-origin: top right;
+  animation: dropdownFade 0.2s ease;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Search form in dropdown */
+#searchDropdownMenu form.search {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#searchDropdownMenu input[type="text"],
+#searchDropdownMenu input.edit {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem 0 0 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: all 0.3s ease;
+  height: 44px;
+  margin: 0;
+  width: auto;
+  box-sizing: border-box;
+}
+
+#searchDropdownMenu input[type="text"]:focus,
+#searchDropdownMenu input.edit:focus {
+  border-color: var(--goteborg-blue);
+  box-shadow: 0 0 0 3px rgba(0, 98, 152, 0.1);
+}
+
+/* Search button styling for tpl_searchform */
+#searchDropdownMenu button.button,
+#searchDropdownMenu input[type="submit"],
+#searchDropdownMenu button[type="submit"] {
+  position: static;
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: var(--goteborg-blue);
+  color: #fff;
+  padding: 0 1.2rem;
+  margin: 0;
+  width: auto;
+  min-width: 60px;
+  max-width: 120px;
+  transition: all 0.3s ease;
+  height: 44px;
+  font-size: 1.05rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+#searchDropdownMenu button.button:hover,
+#searchDropdownMenu input[type="submit"]:hover,
+#searchDropdownMenu button[type="submit"]:hover {
+  background: var(--goteborg-dark-blue);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#searchDropdownMenu button.button:active,
+#searchDropdownMenu input[type="submit"]:active,
+#searchDropdownMenu button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Add search icon to button */
+#searchDropdownMenu button.button::before,
+#searchDropdownMenu input[type="submit"]::before,
+#searchDropdownMenu button[type="submit"]::before {
+  content: '\F52A';
+  font-family: 'bootstrap-icons';
+  font-size: 1rem;
+}
+
+/* Dark mode adjustments for search button */
+[data-bs-theme="dark"] #searchDropdownMenu button.button,
+[data-bs-theme="dark"] #searchDropdownMenu input[type="submit"],
+[data-bs-theme="dark"] #searchDropdownMenu button[type="submit"] {
+  background: var(--goteborg-light-blue);
+}
+
+[data-bs-theme="dark"] #searchDropdownMenu button.button:hover,
+[data-bs-theme="dark"] #searchDropdownMenu input[type="submit"]:hover,
+[data-bs-theme="dark"] #searchDropdownMenu button[type="submit"]:hover {
+  background: var(--goteborg-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile adjustments for search */
+@media (max-width: 576px) {
+  .navbar-tools input[type="text"],
+  .navbar-tools input.edit {
+    min-width: 140px;
+  }
+  
+  .navbar-tools input[type="text"]:focus,
+  .navbar-tools input.edit:focus {
+    min-width: 200px;
+  }
+  
+  #searchDropdownMenu {
+    min-width: 280px;
+    max-width: 320px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  #searchDropdownMenu form.search {
+    padding: 0.5rem 0;
+  }
+  
+  #searchDropdownMenu button.button,
+  #searchDropdownMenu input[type="submit"],
+  #searchDropdownMenu button[type="submit"] {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  #searchDropdownMenu input[type="text"],
+  #searchDropdownMenu input.edit {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Links - Global styles */
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+
+/* Footer links */
+#dokuwiki__footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+#dokuwiki__footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* Regular links */
+a {
+  color: var(--dokuwiki-link);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: var(--dokuwiki-link-visited);
+  text-decoration: none;
+}
+
+/* Non-existent links */
+a.wikilink2,
+a.wikilink2:link,
+a.wikilink2:visited {
+  color: #e74c3c;
+  border-bottom: 1px dashed #e74c3c;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a.wikilink2:hover,
+a.wikilink2:focus {
+  color: #c0392b;
+  border-bottom: 1px solid #c0392b;
+  text-decoration: none;
+}
+
+/* Dark mode for non-existent links */
+[data-bs-theme="dark"] a.wikilink2,
+[data-bs-theme="dark"] a.wikilink2:link,
+[data-bs-theme="dark"] a.wikilink2:visited {
+  color: #ff6b6b;
+  border-bottom: 1px dashed #ff6b6b;
+}
+
+[data-bs-theme="dark"] a.wikilink2:hover,
+[data-bs-theme="dark"] a.wikilink2:focus {
+  color: #ff8787;
+  border-bottom: 1px solid #ff8787;
+}
+
+#searchDropdownMenu form.search .no {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.goteborg-main-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.goteborg-sidebar {
+  flex: 0 0 240px;
+  max-width: 240px;
+  min-width: 200px;
+  margin-right: 2.5rem;
+}
+
+.goteborg-content {
+  flex: 1 1 0%;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}

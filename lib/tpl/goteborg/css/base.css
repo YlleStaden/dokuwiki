@@ -1,0 +1,286 @@
+/**
+ * DokuWiki Template goteborg - Base CSS
+ *
+ * Grundläggande stilar och CSS-variabler för Göteborgs Stads utseende
+ */
+
+/* Import Open Sans webfont */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Göteborgs Stads primära färgpalett */
+  --goteborg-blue: #006298;           /* Göteborgsblå (primär) */
+  --goteborg-dark-blue: #004f7a;      /* Mörkblå */
+  --goteborg-light-blue: #009eb4;     /* Ljusblå */
+  --goteborg-green: #00753b;          /* Grön */
+  --goteborg-purple: #712082;         /* Lila */
+  --goteborg-red: #c31c55;            /* Röd */
+  --goteborg-orange: #d85512;         /* Orange */
+  
+  /* Bootstrap anpassningar till Göteborgs färger */
+  --bs-primary: var(--goteborg-blue);
+  --bs-primary-rgb: 0, 98, 152;
+  --bs-primary-text-emphasis: var(--goteborg-dark-blue);
+  --bs-primary-bg-subtle: #e6f0f9;
+  --bs-primary-border-subtle: #b3cce6;
+  
+  --bs-secondary: var(--goteborg-light-blue);
+  --bs-secondary-rgb: 0, 158, 180;
+  --bs-secondary-text-emphasis: #007d8e;
+  --bs-secondary-bg-subtle: #e6f6f8;
+  --bs-secondary-border-subtle: #b3e6ed;
+  
+  --bs-success: var(--goteborg-green);
+  --bs-success-rgb: 0, 117, 59; 
+  --bs-success-text-emphasis: #005c2e;
+  --bs-success-bg-subtle: #e6f2ec;
+  --bs-success-border-subtle: #b3dcc7;
+  
+  --bs-warning: var(--goteborg-orange);
+  --bs-warning-rgb: 216, 85, 18;
+  --bs-warning-text-emphasis: #ac4310;
+  --bs-warning-bg-subtle: #fbece7;
+  --bs-warning-border-subtle: #f5cbb8;
+  
+  --bs-danger: var(--goteborg-red);
+  --bs-danger-rgb: 195, 28, 85;
+  --bs-danger-text-emphasis: #980e43;
+  --bs-danger-bg-subtle: #f9e7ef;
+  --bs-danger-border-subtle: #edc7d6;
+  
+  --bs-info: var(--goteborg-light-blue);
+  --bs-info-rgb: 0, 158, 180;
+  --bs-info-text-emphasis: #007d8e;
+  --bs-info-bg-subtle: #e6f6f8;
+  --bs-info-border-subtle: #b3e6ed;
+  
+  --bs-dark: #333333;
+  --bs-dark-rgb: 51, 51, 51;
+  --bs-dark-text-emphasis: #262626;
+  --bs-dark-bg-subtle: #eaeaea;
+  --bs-dark-border-subtle: #c6c6c6;
+  
+  --bs-light: #f8f9fa;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-light-text-emphasis: #707070;
+  --bs-light-bg-subtle: #fcfcfc;
+  --bs-light-border-subtle: #f9f9f9;
+  
+  /* Typografi */
+  --bs-font-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --bs-font-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  
+  /* Allmänna DokuWiki variabler */
+  --dokuwiki-background: #ffffff;
+  --dokuwiki-text: #333333;
+  --dokuwiki-border: #e5e5e5;
+  --dokuwiki-link: var(--goteborg-blue);
+  --dokuwiki-link-visited: var(--goteborg-dark-blue);
+  --dokuwiki-background-site: #ffffff;
+  --dokuwiki-highlight: var(--goteborg-blue);
+  
+  /* Övriga anpassningar */
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-color: var(--dokuwiki-text);
+  --bs-body-bg: var(--dokuwiki-background-site);
+  --bs-border-color: var(--dokuwiki-border);
+  --bs-link-color: var(--dokuwiki-link);
+  --bs-link-hover-color: var(--dokuwiki-link-visited);
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* Border radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode variabler */
+[data-bs-theme="dark"] {
+  /* Allmänna DokuWiki variabler för dark mode */
+  --dokuwiki-background: #1a1a1a;
+  --dokuwiki-text: #ffffff;
+  --dokuwiki-border: #404040;
+  --dokuwiki-link: #009eb4;
+  --dokuwiki-link-visited: #006298;
+  --dokuwiki-background-site: #1a1a1a;
+  --dokuwiki-highlight: #009eb4;
+  
+  /* Bootstrap anpassningar för dark mode */
+  --bs-body-color: var(--dokuwiki-text);
+  --bs-body-bg: var(--dokuwiki-background-site);
+  --bs-border-color: var(--dokuwiki-border);
+  --bs-link-color: var(--dokuwiki-link);
+  --bs-link-hover-color: var(--dokuwiki-link-visited);
+  
+  /* Göteborgs Stads primary adjustments for dark mode */
+  --bs-primary: #009eb4;
+  --bs-primary-rgb: 0, 158, 180;
+  --bs-primary-text-emphasis: #e6f6f8;
+  --bs-primary-bg-subtle: #003740;
+  --bs-primary-border-subtle: #007d8e;
+  
+  --bs-secondary: #006298;
+  --bs-secondary-rgb: 0, 98, 152;
+  --bs-secondary-text-emphasis: #e6f0f9;
+  --bs-secondary-bg-subtle: #002d4a;
+  --bs-secondary-border-subtle: #004f7a;
+  
+  --bs-success: #00753b;
+  --bs-success-rgb: 0, 117, 59;
+  --bs-success-text-emphasis: #e6f2ec;
+  --bs-success-bg-subtle: #00361e;
+  --bs-success-border-subtle: #005c2e;
+  
+  --bs-warning: #d85512;
+  --bs-warning-rgb: 216, 85, 18;
+  --bs-warning-text-emphasis: #fbece7;
+  --bs-warning-bg-subtle: #5c240a;
+  --bs-warning-border-subtle: #ac4310;
+  
+  --bs-danger: #c31c55;
+  --bs-danger-rgb: 195, 28, 85;
+  --bs-danger-text-emphasis: #f9e7ef;
+  --bs-danger-bg-subtle: #4a0721;
+  --bs-danger-border-subtle: #980e43;
+  
+  --bs-info: #009eb4;
+  --bs-info-rgb: 0, 158, 180;
+  --bs-info-text-emphasis: #e6f6f8;
+  --bs-info-bg-subtle: #003740;
+  --bs-info-border-subtle: #007d8e;
+  
+  --bs-dark-text-emphasis: #f0f0f0;
+  --bs-dark-bg-subtle: #2d2d2d;
+  --bs-dark-border-subtle: #404040;
+  
+  --bs-light-text-emphasis: #e0e0e0;
+  --bs-light-bg-subtle: #333333;
+  --bs-light-border-subtle: #404040;
+}
+
+/* Typografi och grundläggande stilar */
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container width för att matcha Göteborgs Stads webbplats */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
+}
+
+/* Länkar */
+a {
+  color: var(--dokuwiki-link);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: var(--dokuwiki-link-visited);
+  text-decoration: underline;
+}
+
+/* Dark Mode Switch */
+.form-check.form-switch {
+  display: flex;
+  align-items: center;
+  margin-right: var(--spacing-lg);
+}
+
+.form-check-input {
+  cursor: pointer;
+  margin-right: var(--spacing-sm);
+  width: 2.5em;
+  height: 1.25em;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.form-check-input:checked {
+  background-color: var(--goteborg-blue);
+  border-color: var(--goteborg-blue);
+}
+
+[data-bs-theme="dark"] .form-check-input:checked {
+  background-color: var(--goteborg-light-blue);
+  border-color: var(--goteborg-light-blue);
+}
+
+.form-check-label {
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.875rem;
+  color: var(--bs-body-color);
+}
+
+/* Grid system */
+.row {
+  margin-left: calc(var(--spacing-md) * -1);
+  margin-right: calc(var(--spacing-md) * -1);
+}
+
+.col, [class*="col-"] {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+/* Cards */
+.card {
+  border-radius: var(--border-radius-md);
+  border-color: var(--dokuwiki-border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--goteborg-blue);
+  border-color: var(--goteborg-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--goteborg-dark-blue);
+  border-color: var(--goteborg-dark-blue);
+}
+
+[data-bs-theme="dark"] .btn-primary {
+  background-color: var(--goteborg-light-blue);
+  border-color: var(--goteborg-light-blue);
+}
+
+[data-bs-theme="dark"] .btn-primary:hover {
+  background-color: var(--goteborg-blue);
+  border-color: var(--goteborg-blue);
+}

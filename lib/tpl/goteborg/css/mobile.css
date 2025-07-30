@@ -1,0 +1,137 @@
+/**
+ * DokuWiki Template goteborg - Mobile
+ *
+ * Stilar för mobila enheter
+ */
+
+/* Små skärmar (upp till 576px) */
+@media (max-width: 576px) {
+  /* Logotyp och branding */
+  .site-logo {
+    height: 30px;
+  }
+  
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+  
+  /* Header layout */
+  #dokuwiki__header .tools {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Sökformulär */
+  #dokuwiki__header form.search {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  #dokuwiki__header form.search input.edit {
+    width: 100%;
+  }
+  
+  /* Content layout */
+  #dokuwiki__aside,
+  #dokuwiki__main {
+    padding: 0;
+  }
+  
+  /* Tabeller */
+  .page-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  /* Verktygsmenyer */
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Dark mode switch */
+  .form-check.form-switch {
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium skärmar (576px-768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Content layout */
+  #dokuwiki__aside,
+  #dokuwiki__main {
+    padding: 0 10px;
+  }
+  
+  /* Verktygsmenyer */
+  .tools {
+    justify-content: flex-start;
+  }
+}
+
+/* Landscape orientering på mobiler */
+@media (max-height: 450px) and (orientation: landscape) {
+  #dokuwiki__header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .navbar {
+    padding: 0;
+  }
+}
+
+/* Förbättringar för touch-enheter */
+@media (hover: none) {
+  /* Större klickytor för touch */
+  .navbar-nav .nav-link,
+  .tools .btn,
+  .page-actions .btn,
+  .page-tools .btn {
+    padding: 10px 15px;
+  }
+  
+  /* Tydligare fokus för touch */
+  a:focus,
+  button:focus,
+  input:focus {
+    outline: none;
+  }
+  
+  [data-bs-theme="dark"] a:focus,
+  [data-bs-theme="dark"] button:focus,
+  [data-bs-theme="dark"] input:focus {
+    outline: none;
+  }
+}
+
+/* Förbättringar för print-previews på mobila enheter */
+@media print {
+  #dokuwiki__header,
+  #dokuwiki__footer,
+  .tools,
+  #dokuwiki__aside {
+    display: none !important;
+  }
+  
+  #dokuwiki__main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Dark mode specifika justeringar för mobil */
+@media (max-width: 768px) {
+  [data-bs-theme="dark"] .navbar-light .navbar-toggler {
+    background-color: #3378b4;
+    border-color: #3378b4;
+  }
+  
+  [data-bs-theme="dark"] .navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}

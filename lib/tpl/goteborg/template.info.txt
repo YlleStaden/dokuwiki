@@ -1,0 +1,7 @@
+base     goteborg
+author   Claude
+email    claude@example.com
+date     2025-05-17
+name     Goteborg Template
+desc     A responsive DokuWiki template based on Bootstrap, following Gothenburg City's style guide with dark mode support
+url      https://www.dokuwiki.org/template:goteborg
