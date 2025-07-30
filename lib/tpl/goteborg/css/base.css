@@ -9,9 +9,9 @@
 
 :root {
   /* Göteborgs Stads primära färgpalett */
-  --goteborg-blue: #006298;           /* Göteborgsblå (primär) */
-  --goteborg-dark-blue: #004f7a;      /* Mörkblå */
-  --goteborg-light-blue: #009eb4;     /* Ljusblå */
+  --goteborg-blue: #0077BC;           /* Göteborgsblå (primär) */
+  --goteborg-dark-blue: #0077BC;      /* Mörkblå */
+  --goteborg-light-blue: #0077BC;     /* Ljusblå */
   --goteborg-green: #00753b;          /* Grön */
   --goteborg-purple: #712082;         /* Lila */
   --goteborg-red: #c31c55;            /* Röd */
