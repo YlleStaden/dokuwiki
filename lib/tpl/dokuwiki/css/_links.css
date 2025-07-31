@@ -38,10 +38,6 @@
     background-position: 0 center;
     padding: 0 0 0 1.4em;
 }
-/* external link */
-.dokuwiki a.urlextern {
-    background-image: url(../../images/external-link.svg);
-}
 /* windows share */
 .dokuwiki a.windows {
     background-image: url(../../images/unc.svg);
