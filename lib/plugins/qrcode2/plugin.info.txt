@@ -1,0 +1,7 @@
+base   qrcode2
+author Daniel Pätzold
+email  obel1x@web.de
+date   2025-06-09
+name   QR Code
+desc   Display locally generated QR Code
+url    https://dokuwiki.obel1x.de//doku.php?id=content:qrcode
