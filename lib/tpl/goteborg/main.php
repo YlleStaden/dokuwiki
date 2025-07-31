@@ -80,13 +80,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                             <a class="dropdown-item" href="<?php echo wl($ID, array('do'=>'edit')); ?>"><i class="bi bi-pencil"></i> Redigera</a>
                             <a class="dropdown-item" href="<?php echo wl($ID, array('do'=>'revisions')); ?>"><i class="bi bi-clock-history"></i> Historik</a>
                             <a class="dropdown-item" href="<?php echo wl($ID, array('do'=>'backlink')); ?>"><i class="bi bi-link-45deg"></i> Bakåtlänkar</a>
-                            <a class="dropdown-item" href="<?php echo wl($ID, array('do'=>'export_dw2markdown')); ?>">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-filetype-md" viewBox="0 0 16 16" style="vertical-align: -.125em; margin-right: .5em;">
-                                    <rect width="16" height="16" fill="none"/>
-                                    <path d="M4.5 10.5v-5h1l1 2.5 1-2.5h1v5h-1v-3l-1 2.5-1-2.5v3h-1zm7.5-5v5h-1.5v-5H12z"/>
-                                </svg>
-                                Exportera till Markdown (.md)
-                            </a>
+                            <a class="dropdown-item" href="<?php echo wl($ID, array('do'=>'export_dw2markdown')); ?>"> Exportera till Markdown (.md)</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +144,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <img src="<?php echo tpl_basedir(); ?>images/logo-white.svg" alt="<?php echo $conf['title']; ?>" class="footer-logo mb-2" style="height: 60px;">
                         <p class="mb-0">
-                            <?php echo $conf['title']; ?> - Göteborgs Stads wikilösning med integrerad AI
+                            <?php echo $conf['title']; ?> - <?php echo $conf['tagline']; ?>
                         </p>
                     </div>
                     <div class="col-lg-4">
