@@ -1,0 +1,15 @@
+Enkät
+Observation
+Intervju
+Experiment
+Test
+Statistisk analys
+Simulering
+Kontrollgruppsmetod
+Fokusgrupp
+Benchmarking
+Longitudinell studie
+Tvärsnittsstudie
+Surveys
+Nätverksanalys
+Prestandamätning

@@ -1,0 +1,10 @@
+Kort
+Medium
+Lång
+Mycket kort
+Mycket lång
+Kompakt
+Utförlig
+Översiktlig
+Detaljerad
+Begränsad

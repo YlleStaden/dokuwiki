@@ -1,0 +1,15 @@
+Formell
+Informell
+Professionell
+Vänlig
+Neutral
+Uppmuntrande
+Akademisk
+Konversationell
+Humoristisk
+Kritisk
+Inspirerande
+Allvarlig
+Högtidlig
+Rörande
+Tydlig

@@ -1,0 +1,14 @@
+Ekonomisystem
+IT-system
+Logistiksystem
+Ledningssystem
+Utbildningssystem
+Affärssystem
+Kommunikationssystem
+Produktionssystem
+Projektstyrningssystem
+CRM-system (Customer Relationship Management)
+ERP-system (Enterprise Resource Planning)
+Säkerhetssystem
+Transportssystem
+Hälsosystem

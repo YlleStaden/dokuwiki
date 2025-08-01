@@ -1,0 +1,37 @@
+base   promptbox
+author Henrik Yllemo
+email  your-email@example.com
+date   2024-10-12
+name   Prompt Box Plugin
+desc   A plugin to display a customizable prompt box with a title, prompt text, copy functionality, and a call-to-action link.
+url    https://your-website.com/plugin-url
+tags   prompt, box, editable, system
+template promptbox
+supports[] i18n
+supports[] lang
+
+==== Usage Example ====
+
+To use the plugin in a DokuWiki page, insert the following syntax:
+
+<promptbox [Your Custom Title]>This is a sample prompt text that spans
+multiple lines. [This part is bracketed] for emphasis.</promptbox>
+
+==== Example Breakdown ====
+- `[Your Custom Title]`: This sets the title of the prompt box.
+- `This is a sample prompt text...`: This is the content that will appear as the prompt.
+- Bracketed text (e.g., `[This part is bracketed]`) will be highlighted in blue for emphasis.
+
+==== Features ====
+- **Custom Title**: You can set the title dynamically for each prompt box.
+- **Multi-Line Support**: The plugin handles multi-line prompt text, respecting line breaks.
+- **Bracket Highlighting**: Any text inside square brackets will be highlighted in blue.
+- **Copy Functionality**: Includes buttons to copy either the prompt text or the URL.
+- **Call-to-Action Link**: A link in the lower left corner that defaults to "https://almbok.com/ai/prompts/start" with the message "Learn more about AI Prompt Engineering."
+
+==== Use Case Instructions ====
+- **Creating Custom Prompts**: Use the plugin to display prompts or instructions, making it easy for users to copy content.
+- **Embedding AI Prompts**: Share prompts related to AI or any other subject, and allow users to copy them with a click.
+- **Training Material**: The box is useful for sharing short instructions or training material with easy-to-copy text.
+
+This plugin enhances content sharing and training by allowing dynamic, interactive prompt boxes that encourage user engagement through copy buttons and links.

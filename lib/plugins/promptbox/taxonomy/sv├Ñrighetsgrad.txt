@@ -1,0 +1,10 @@
+Enkel
+Måttlig
+Utmanande
+Svår
+Mycket svår
+Grundläggande
+Avancerad
+Komplex
+Kräver erfarenhet
+Omöjlig

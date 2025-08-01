@@ -1,0 +1,35 @@
+Offentlighetsprincipen
+Förvaltningslagen
+Dataskyddsförordningen (GDPR)
+Arkivlagen
+Informationssäkerhetslagen (NIS-direktivet)
+Personuppgiftslagen (PUL, historisk)
+Tryckfrihetsförordningen
+Säkerhetsskyddslagen
+Kommunallagen
+Lag om offentlig upphandling (LOU)
+Lag om upphandling inom försörjningssektorerna (LUF)
+Lag om upphandling av koncessioner (LUK)
+ITIL (Information Technology Infrastructure Library)
+PPS (Praktisk ProjektStyrning)
+PM3 (Förvaltningsstyrningsmodell)
+ISO 27001 (Informationssäkerhet)
+ISO 9001 (Kvalitetsledning)
+ISO 14001 (Miljöledning)
+MSB:s föreskrifter för informationssäkerhet
+DIGG:s riktlinjer för digital tillgänglighet
+WCAG (Web Content Accessibility Guidelines)
+eIDAS-förordningen
+EU:s cybersäkerhetsakt
+NIST Cybersecurity Framework
+CIS Controls
+GDPR Tillsynsmyndighetens riktlinjer (IMY)
+E-arkiv rekommendationer
+E-förvaltningspolicy
+Nationell digitaliseringsstrategi
+Digitaliseringsrådets rekommendationer
+Skolverkets IT-strategi
+Socialstyrelsens riktlinjer för eHälsa
+Vägledning för webbutveckling (DIGG)
+Myndigheternas föreskrifter om e-legitimationer
+Ramverk för molntjänster (Kammarkollegiet)

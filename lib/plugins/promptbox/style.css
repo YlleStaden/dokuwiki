@@ -1,0 +1,322 @@
+/* --- DARK MODE: Bracket ska ha Göteborgs blå bakgrund och text --- */
+[data-bs-theme="dark"] .promptbox-plugin-text .bracket {
+    background: #2d2d2d !important;
+    color: #fff !important;
+    border-color: #0077BC !important;
+}
+/* --- DARK MODE: Länkar i prompttexten ska vara Göteborgs blå --- */
+[data-bs-theme="dark"] .promptbox-plugin-text a {
+    color: #0077BC !important;
+    text-decoration: underline;
+}
+/* --- DARK MODE: Gör popupens textfält mörka med vit text --- */
+[data-bs-theme="dark"] .promptbox-edit-input,
+[data-bs-theme="dark"] .promptbox-edit-select {
+    background: #232b33 !important;
+    color: #fff !important;
+    border: 1px solid #3a4d5c !important;
+}
+/* --- DARK MODE OVERRIDE: Göteborgs Stad dark blue-grey gradient for promptbox --- */
+[data-bs-theme="dark"] .promptbox-plugin-container,
+[data-bs-theme="dark"] .promptbox-edit-popup-content {
+    background: linear-gradient(145deg, #2b2c2d 0%, #727272 100%) !important;
+    color: #fff !important;
+    border: 1px solid #2a3a43 !important;
+}
+
+[data-bs-theme="dark"] .promptbox-plugin-title,
+[data-bs-theme="dark"] .promptbox-plugin-title-text,
+[data-bs-theme="dark"] .promptbox-plugin-title svg,
+[data-bs-theme="dark"] .promptbox-plugin-copy-indicator,
+[data-bs-theme="dark"] .promptbox-plugin-lower-left-cta,
+[data-bs-theme="dark"] .promptbox-plugin-lower-left-cta:hover,
+[data-bs-theme="dark"] .promptbox-edit-popup-content h3,
+[data-bs-theme="dark"] a {
+    color: #0077BC !important;
+    stroke: #0077BC !important;
+}
+/* Container styles for the plugin with dynamic height */
+.promptbox-plugin-container {
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, var(--bs-light, #ffffff), var(--bs-primary-bg-subtle, #e6f0f9));
+    box-shadow: 5px 5px 15px rgba(var(--bs-primary-rgb, 0, 98, 152), 0.10), -5px -5px 15px rgba(255,255,255,0.8);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    padding-bottom: 10px; /* Space for bottom icons */
+    width: 260px; /* Default width, can be changed dynamically */
+    border: 1px solid var(--bs-primary-border-subtle, #b3cce6);
+}
+
+/* Hover effect for the container */
+.promptbox-plugin-container:hover {
+    box-shadow: 0 0 20px rgba(0, 48, 135, 0.2);
+    border: 1px solid rgba(0, 48, 135, 0.3);
+}
+
+/* Copy indicator text positioned to the left of the copy button */
+.promptbox-plugin-copy-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: var(--bs-primary, #0077BC);
+    font-size: 14px;
+    display: none;
+    background: var(--bs-primary-bg-subtle, #e6f0f9);
+    padding: 4px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
+    animation: fadeInOut 2s ease;
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Title and icon styles */
+.promptbox-plugin-title {
+    display: flex;
+    align-items: center;
+    color: var(--bs-primary, #0077BC);
+}
+
+/* Title text with a slightly larger font size */
+.promptbox-plugin-title-text {
+    margin: 0;
+    line-height: 24px; /* Ensures vertical alignment with icon */
+    font-family: "PromptboxTitle", sans-serif; /* Unique font to avoid conflicts */
+    font-size: 20px; /* Slightly increased font size */
+    color: var(--bs-primary, #0077BC);
+    font-weight: 600;
+}
+
+/* Title SVG icon */
+.promptbox-plugin-title svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: none;
+    stroke: var(--bs-primary, #0077BC);
+    stroke-width: 2;
+    transition: stroke 0.3s ease;
+}
+
+/* Prompt text styles */
+.promptbox-plugin-text {
+    margin-top: 10px;
+    margin-bottom: 40px; /* Add space for the copy button */
+    line-height: 1.6;
+    color: var(--dokuwiki-text, #333333);
+    font-size: 16px;
+}
+
+/* Bracketed text styles */
+.promptbox-plugin-text .bracket {
+    color: var(--bs-info, #479EF5);
+    font-weight: 500;
+    background: var(--bs-info-bg-subtle, #e6f6f8);
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.promptbox-plugin-text .bracket:hover {
+    background: var(--bs-info-border-subtle, #b3e6ed);
+}
+
+/* Call-to-action text in the lower left */
+.promptbox-plugin-lower-left-cta {
+    position: absolute;
+    bottom: 10px;
+    left: 20px; /* Adjusted to align with other text elements */
+    color: var(--bs-light-text-emphasis, #707070);
+    font-size: 12px; /* Smaller size */
+    font-weight: normal; /* Less emphasis */
+    text-decoration: none;
+    opacity: 0.8; /* Makes it more subtle */
+    transition: opacity 0.3s ease, color 0.3s ease;
+    font-family: "PromptboxCTA", sans-serif; /* Unique font family to prevent conflicts */
+}
+
+.promptbox-plugin-lower-left-cta:hover {
+    opacity: 1; /* Fully visible on hover */
+    color: var(--bs-primary, #0077BC); /* Blue on hover */
+}
+
+/* Bottom icons */
+.promptbox-plugin-lower-right-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.promptbox-plugin-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.promptbox-plugin-icon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 48, 135, 0.1);
+    border-radius: 8px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.promptbox-plugin-icon-button:hover::before {
+    transform: scale(1);
+}
+
+.promptbox-plugin-icon-button svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--bs-light-text-emphasis, #707070);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.promptbox-plugin-icon-button:hover svg {
+    stroke: var(--bs-primary, #0077BC);
+    transform: scale(1.1);
+}
+
+/* Edit popup styles */
+.promptbox-edit-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.promptbox-edit-popup-content {
+    background: var(--bs-light, #fff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    max-width: 90%;
+}
+
+.promptbox-edit-popup-content h3 {
+    margin-top: 0;
+    color: var(--bs-primary, #0077BC);
+    font-size: 18px;
+}
+
+.promptbox-edit-input {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: 1px solid var(--bs-primary-border-subtle, #b3cce6);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: var(--bs-light, #fff);
+    color: var(--dokuwiki-text, #333);
+}
+
+.promptbox-edit-input:focus {
+    outline: none;
+    border-color: var(--bs-primary, #0077BC);
+    box-shadow: 0 0 0 2px rgba(0, 48, 135, 0.1);
+}
+
+.promptbox-edit-select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid var(--bs-primary-border-subtle, #b3cce6);
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--bs-light, #fff);
+}
+
+.promptbox-edit-select:focus {
+    outline: none;
+    border-color: var(--bs-info, #479EF5);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.promptbox-edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.promptbox-edit-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.promptbox-edit-save {
+    background-color: var(--bs-primary, #0077BC);
+    color: white;
+}
+
+.promptbox-edit-save:hover {
+    background-color: var(--bs-primary-text-emphasis, #006298);
+}
+
+.promptbox-edit-cancel {
+    background-color: var(--bs-light-bg-subtle, #fcfcfc);
+    color: #707070;
+}
+
+.promptbox-edit-cancel:hover {
+    background-color: var(--bs-light-border-subtle, #f9f9f9);
+}
+
+.bracket.system {
+    background-color: var(--bs-info-bg-subtle, #e6f6f8);
+    border-color: var(--bs-info, #479EF5);
+}
