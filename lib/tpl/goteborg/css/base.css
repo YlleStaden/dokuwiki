@@ -288,3 +288,55 @@ a:hover, a:focus {
 textarea#wiki__text.edit {
     width: 100%;
 }
+
+
+div.dokuwiki {
+  div.plugin_wrap {
+    &.wrap_center.wrap_round {
+      /* Delad stil för panel */
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 20px 25px;
+      border-radius: 3px;
+      text-align: left;
+      width: auto !important;
+      background-image: initial;
+      min-height: initial;
+      p:last-child { margin: 0; }
+
+      /* Exempelpaneler med Göteborgsfärger */
+      &.wrap_alert { 
+        border-left: 10px solid #d24723; /* Röd */
+        background: #fff3b0; /* Ljusgul bakgrund */
+        color: #d24723; 
+      }
+      &.wrap_important {
+        border-left: 10px solid #ffcd37; /* Gul */
+        background: #d1d9dc; /* Ljusgrå bakgrund */
+        color: #7c4b00; /* Egen kontrastfärg (ta hänsyn till läslighet) */
+      }
+      &.wrap_tip {
+        border-left: 10px solid #008767; /* Grön */
+        background: #b8e1c8; /* Ljusgrön bakgrund */
+        color: #008767; 
+      }
+      &.wrap_info {
+        border-left: 10px solid #0077bc; /* Blå */
+        background: #c0e4f2; /* Ljusblå bakgrund */
+        color: #0077bc; 
+      }
+      &.wrap_help {
+        border-left: 10px solid #674b99; /* Lila */
+        background: #e1d1e8; /* Ljus violett */
+        color: #674b99;
+      }
+      &.wrap_todo {
+        border-left: 10px solid #ffcd37; /* Gul */
+        background: #fff3b0;
+        color: #a37b02; /* Egen kontrastfärg */
+      }
+    }
+  }
+}
