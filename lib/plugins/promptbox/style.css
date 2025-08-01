@@ -24,17 +24,7 @@
     border: 1px solid #2a3a43 !important;
 }
 
-[data-bs-theme="dark"] .promptbox-plugin-title,
-[data-bs-theme="dark"] .promptbox-plugin-title-text,
-[data-bs-theme="dark"] .promptbox-plugin-title svg,
-[data-bs-theme="dark"] .promptbox-plugin-copy-indicator,
-[data-bs-theme="dark"] .promptbox-plugin-lower-left-cta,
-[data-bs-theme="dark"] .promptbox-plugin-lower-left-cta:hover,
-[data-bs-theme="dark"] .promptbox-edit-popup-content h3,
-[data-bs-theme="dark"] a {
-    color: #0077BC !important;
-    stroke: #0077BC !important;
-}
+
 /* Container styles for the plugin with dynamic height */
 .promptbox-plugin-container {
     position: relative;
