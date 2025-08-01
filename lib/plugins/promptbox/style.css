@@ -23,6 +23,9 @@
     color: #fff !important;
     border: 1px solid #2a3a43 !important;
 }
+[data-bs-theme="dark"] .breadcrumbs a:hover {
+  color: #81ccd5 !important;
+}
 
 
 /* Container styles for the plugin with dynamic height */
